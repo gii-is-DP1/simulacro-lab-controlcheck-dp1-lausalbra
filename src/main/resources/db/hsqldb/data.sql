@@ -1,3 +1,12 @@
+
+INSERT INTO product_type(id, name) VALUES (1, 'Accessories');
+INSERT INTO product_type(id, name) VALUES (2, 'Food');
+
+INSERT INTO products(id, name, price, product_type) VALUES (1, 'Wonderful dog collar', 17.25,1);
+INSERT INTO products(id, name, price, product_type) VALUES (2, 'Super Kitty Cookies', 50.0,2);
+
+
+
 -- One admin user, named admin1 with passwor 4dm1n and authority admin
 INSERT INTO users(username,password,enabled) VALUES ('admin1','4dm1n',TRUE);
 INSERT INTO authorities(id,username,authority) VALUES (1,'admin1','admin');
@@ -31,6 +40,8 @@ INSERT INTO types VALUES (3, 'lizard');
 INSERT INTO types VALUES (4, 'snake');
 INSERT INTO types VALUES (5, 'bird');
 INSERT INTO types VALUES (6, 'hamster');
+
+
 
 INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023', 'owner1');
 INSERT INTO owners VALUES (2, 'Betty', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749', 'owner1');
